@@ -27,7 +27,18 @@
         <link href="css/vegas.min.css" rel="stylesheet">
 
         <link href="css/style.css" rel="stylesheet">
-        
+
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init({
+                    publicKey: "9my6-TEVbAuFc404R",
+                });
+            })();
+        </script>
+        <script src="js/script.js"></script>
 <!--
 
 Mbuso Cosby Ubisi Personal Profile
@@ -238,6 +249,7 @@ Bootstrap 5 HTML CSS Template
                                             </ul>
                                         </div>
                                     </div>
+                                    <p>Let’s build something great together while making a difference!</p>
 
                                     <div class="skills-block-image-wrap">
                                         <img src="images/skills/photo_2024-12-18_21-30-00_left.jpg" class="skills-block-image img-fluid" alt="">
@@ -554,7 +566,7 @@ Bootstrap 5 HTML CSS Template
                             </div>
 
                             <div class="col-lg-6 col-12">
-                                <form action="#" method="post" class="custom-form contact-form" role="form">
+                                <form action="submit" method="post" class="custom-form contact-form" role="form">
 
                                 <div class="row">
                                     
@@ -570,6 +582,13 @@ Bootstrap 5 HTML CSS Template
                                         <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Jack@example.com" required="">
                                     </div>
 
+                                    <div class="col-lg-6 col-12">
+                                        <label for="subject" class="form-label">Subject</label>
+
+                                        <input type="text" id="subject" name="subject" required="">
+
+                                    </div>
+
                                     <div class="col-12">
                                         <label for="message" class="form-label">How can we help?</label>
 
@@ -579,7 +598,7 @@ Bootstrap 5 HTML CSS Template
                                 </div>
 
                                 <div class="col-lg-5 col-12 mx-auto mt-3">
-                                    <button type="submit" class="form-control">Send Message</button>
+                                    <button type="submit"  class="form-control" onclick="sendMail()">Send Message</button>
                                 </div>
                             </form>
                             </div>
@@ -682,7 +701,7 @@ Bootstrap 5 HTML CSS Template
                             </div>
 
                             <div class="col-lg-8 col-12 mt-4 text-center">
-                                <p class="copyright-text mb-0">2024 Copyright ©<strong>Mbuso Cosby Ubisi</strong>  | All Rights Reserved
+                                <p class="copyright-text mb-0">2025 Copyright © <strong>Mbuso Cosby Ubisi</strong>  | All Rights Reserved
                                 </p>
                             </div>
                     </div>

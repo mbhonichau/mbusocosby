@@ -1,10 +1,17 @@
-function sendMail(){
+function sendMail() {
     let parms = {
-        name : document.getElementById("name").value,
-        email : document.getElementsById("email").value,
-        subject : document.getElementById("subject").value,
-        message : document.getElementById("message").value,
-    }
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("message").value,
+    };
 
-    emailjs.send("service_5aghzaj", "template_axudcfj", parms).then(alert("Email Sent!!"))
+    emailjs.send("service_5aghzaj", "template_axudcfj", parms)
+        .then(function(response) {
+            alert("Email Sent Successfully!");
+        })
+        .catch(function(error) {
+            console.error("EmailJS Error:", error);
+            alert("Failed to send email. Please try again.");
+        });
 }

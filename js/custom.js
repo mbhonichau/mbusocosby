@@ -20,6 +20,7 @@
           animation: 'kenburns',
       });
     });
+
     
     // CUSTOM LINK
     $('.smoothscroll').click(function(){

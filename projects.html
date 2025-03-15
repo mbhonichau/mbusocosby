@@ -1,409 +1,560 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Digital profile">
+    <meta name="author" content="mbuso cosby ubisi">
+    <title>Mbuso's Digital Portfolio</title>
 
-        <meta name="description" content="Digital profile">
-        <meta name="author" content="mbuso cosby ubisi">
+    <!-- FAVICONS -->
+    <link href="images/logo.png" rel="icon">
+    <link href="images/logo.png" rel="apple-touch-icon">
 
-        <title>Mbuso's_Digital Portfolio</title>
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,400;0,600;0,700;1,200;1,700&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/vegas.min.css" rel="stylesheet">
+    <!-- Include Swiper's CSS -->
+    <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-        <!-- FAVICONS -->
-        <link href="images/logo.png" rel="icon">
-        <link href="images/logo.png" rel="apple-touch-icon">
-        
-        <!-- CSS FILES -->                
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,400;0,600;0,700;1,200;1,700&display=swap" rel="stylesheet">
-            
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-        <link href="css/bootstrap-icons.css" rel="stylesheet">
 
-        <link href="css/vegas.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body class="reservation-page">
+    <main>
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="images/logo.png" class="navbar-brand-image img-fluid" alt="">
+            Ubisi
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-lg-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#section_1">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#section_2">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#skills-section">My Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#section_4">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link click-scroll" href="index.html#section_5">Achievements</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#section_6">Contact</a>
+              </li>
+            </ul>
+            <div class="ms-lg-3">
+              <a class="btn custom-btn custom-border-btn" href="projects.html">
+                My Projects <i class="bi-arrow-up-right ms-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
 
-        <link href="css/style.css" rel="stylesheet">
-<!--
-
-Mbuso Cosby Ubisi Personal Profile
-
-Bootstrap 5 HTML CSS Template
-
--->
-    </head>
-    
-    <body class="reservation-page">
+      <!-- Projects Section -->
+      <section class="project-section section-padding" id="project">
+        <div class="container">
+          <div class="flex-column">
+            <!-- Header -->
+            <div class="col-12 col-lg-12 mx-auto position-relative">
                 
-            <main>
-                <nav class="navbar navbar-expand-lg">                
-                    <div class="container">
-                        <a class="navbar-brand d-flex align-items-center" href="index.html">
-                            <img src="images/logo.png" class="navbar-brand-image img-fluid" alt="">
-                        Ubisi
+              <div class="d-flex flex-wrap align-items-center justify-content-between" id="project-1">
+                <div>
+                  <h2 class="text-white mt-4"><strong>Explore my Projects</strong></h2>
+                </div>
+                <a href="room.html" class="btn btn-arrow btn-primary mt-8">
+                  <span>Visit GitHub
+                    <svg width="6" height="6">
+                      <use xlink:href="#arrow-right"></use>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <!-- Swiper Slider -->
+              <div class="swiper project-swiper mt-5">
+                <div class="swiper-wrapper">
+                  <!-- Project 1 Lionwoood & Decking-->
+                  <div class="swiper-slide">
+                    <div class="project-item position-relative bg-black rounded-4 overflow-hidden">
+                      <img src="images/other/Lionwood.png" 
+                           alt="img" class="post-image img-fluid rounded-4">
+                      <div class="project-description position-absolute p-5 text-start">
+                        <h4 class="text-white">Lionwoood & Decking <span class="badge ms-3">Lionwood | (2025)</span></h4>
+                        <p class="project-paragraph text-white">
+                          Professional website development, featuring SEO optimization and API integration.
+                        </p>
+                        <table>
+                          <tbody>
+                            <tr class="text-white">
+                              <td class="pe-2">Tools:</td>
+                              <td class="price">HTML, CSS, Bootstrap, JavaScript</td>
+                            </tr>
+                           
+                            <tr class="text-white">
+                              <td class="pe-2">API:</td>
+                              <td>Calendly, Google Maps</td>
+                            </tr>
+                            
+                          </tbody>
+                        </table>
+                        <a href="https://lionwoodanddecking.com/" target="_blank">
+                          <p class="text-decoration-underline text-white m-0 mt-2">View Project</p>
                         </a>
-        
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-        
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav ms-lg-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="index.html#section_1">Home</a>
-                                </li>
-        
-                                <li class="nav-item">
-                                    <a class="nav-link" href="index.html#section_2">About</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="index.html#skills-section">My Skills</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="index.html#section_4">Experience</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link click-scroll" href="index.html#section_5">Achievements</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="index.html#section_6">Contact</a>
-                                </li>
-                            </ul>
-
-                            <div class="ms-lg-3">
-                                <a class="btn custom-btn custom-border-btn" href="projects.html">
-                                    My Projects
-                                    <i class="bi-arrow-up-right ms-2"></i>
-                                </a>
-                            </div>
-                        </div>
+                      </div>
                     </div>
-                </nav>
-                
-
-                <section class="project-section section-padding " id="section_1">
-                    
-                <div class="container">
-                    
-                    <div class="row">
-                        
-                        <div class="col-lg-10 col-12 mx-auto">
-                            
-                            
-                            <div class="project-form-wrap">
-                                
-                                <div class="row">
-                                    <div class="col-lg-7 col-12 p-0">
-                                        <form class="custom-form project-form" action="#" method="post" role="form">
-                                            <div class="d-flex">
-                                                
-                                                <div class="text-white mb-0 pb-lg-0">
-                                                    <h6 class="text-white">
-                                                        Healthcare System Improvement 
-                                                    </h6>
-                        
-                                                    <p>
-                                                    
-                                                        <li>
-                                                            <b>Objective:</b> Tackle disparities in South Africa’s healthcare system using data-driven solutions.
-                                                        </li>
-                                                        <li>
-                                                            <b>Tools:</b>World Bank, DataFirst datasets
-                                                        </li>
-                                                        <li>
-                                                            <b>Outcome:</b> Developed predictive models to forecast diseases and allocate healthcare resources efficiently, focusing on scalability, impact, and ethical considerations.
-                                                        </li>
-                                                       
-                                                    </p>
-                                                    <a href="#" class="smoothscroll btn custom-btn custom-border-btn mt-0 mb-0">View Project</a>
-                                                </div>
-
-                                            </div>
-                                        </form>
-                                    </div>
-
-                                    <div class="col-lg-5 col-12 p-0">
-                                        <div class="project-form-image-wrap">
-                                            
-                                            <img src="images/other/programming-background-with-person-working-with-codes-computer.jpg" class="project-form-image img-fluid" alt="">
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="col-lg-10 col-12 mx-auto">
-                            
-                            <div class="project-form-wrap">
-                                
-                                <div class="row">
-                                    <div class="col-lg-7 col-12 p-0">
-                                        <form class="custom-form project-form" action="#" method="post" role="form">
-                                            <div class="d-flex">
-                                                
-                                                <div class="text-white mb-0 pb-lg-0">
-                                                    <h6 class="text-white">
-                                                        Web Development (Information System)
-                                                    </h6>
-                        
-                                                    <p>
-                                                    
-                                                        <li>
-                                                            <b>Objective:</b> Enhance operational efficiency and customer service with an integrated system.
-                                                        </li>
-                                                        <li>
-                                                            <b>Technology:</b> JavaScript, HTML, CSS, PHP, SQL
-                                                        </li>
-                                                        <li>
-                                                            <b>Highlights:</b> Captured daily transactions and streamlined decision-making
-                                                        </li>
-                                                       
-                                                    </p>
-                                                    <a href="#" class="smoothscroll btn custom-btn custom-border-btn mt-0 mb-0">View Project</a>
-                                                </div>
-
-                                            </div>
-                                        </form>
-                                    </div>
-
-                                    <div class="col-lg-5 col-12 p-0">
-                                        <div class="project-form-image-wrap">
-                                            
-                                            <img src="images/other/Screenshot 2024-12-24 075905.png" class="project-form-image img-fluid" alt="">
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
+                    <div class="project-content text-center mt-3">
+                      <h3 class="text-white"><a href="https://lionwoodanddecking.com/" target="_blank">Full-Stack Dev</a></h3>
+                      <p><span class="text-primary">Freelance</p>
                     </div>
-                    
-                </section>
+                  </div>
+                  <!-- End Project 1 -->
 
-                <section class="project-section section-padding  " id="section_2">
-                    
-                    <div class="container">
+                  <!-- Project 2 Jusaqua Prepared Water-->
+                  <div class="swiper-slide">
+                    <div class="project-item position-relative bg-black rounded-4 overflow-hidden">
+                      <img src="images/other/Jusaqua.png" 
+                           alt="img" class="post-image img-fluid rounded-4">
+                      <div class="project-description position-absolute p-5 text-start">
+                        <h4 class="text-white">Jusaqua Prepared Water <span class="badge ms-3">Jusaqua | (2024)</span></h4>
+                        <p class="project-paragraph text-white">
+                          Web Development for a water purification company based in Makhanda and neighboring towns. 
+                          <li class="text-white">
+                            <strong >Technologies:</strong> Python, Power BI, NumPy
+                          </li>
+                          
+                          <li class="text-white">
+                            <strong >Features:</strong><br>✔️ Predicted disease trends using machine learning <br>✔️ Designed data-driven solutions to improve healthcare efficiency.
+                          </li>
+                        </p>
+
+                        <a href="https://jusaqua.co.za/" target="_blank">
+                          <p class="text-decoration-underline text-white m-0 mt-2">View Project</p>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="project-content text-center mt-3">
+                      <h3 class="text-white"><a href="https://jusaqua.co.za/" target="_blank">Full-Stack Dev</a></h3>
+                      <p><span class="text-primary">Freelance</p>
+                    </div>
+                  </div>
+                  <!-- End Project 2 -->
+
+                  <!-- Project 3 Healthcare System-->
+                  <div class="swiper-slide">
+                    <div class="project-item position-relative bg-black rounded-4 overflow-hidden">
+                      <img src="images/other/Healthcare_System.png" 
+                           alt="img" class="post-image img-fluid rounded-4">
+                      <div class="project-description position-absolute p-5 text-start">
                         
-                        <div class="row">
-                            
-                            <div class="col-lg-10 col-12 mx-auto">
-                                
-                                
-                                <div class="project-form-wrap">
-                                    
-                                    <div class="row">
-                                        <div class="col-lg-7 col-12 p-0">
-                                            <form class="custom-form project-form" action="#" method="post" role="form">
-                                                <div class="d-flex">
-                                                    
-                                                    <div class="text-white mb-0 pb-lg-0">
-                                                        <h6 class="text-white">
-                                                            Temperature Data Analysis and Modelling
-                                                        </h6>
-                            
-                                                        <p>
-                                                        
-                                                            <li>
-                                                                <b>Objective:</b> Analyze temperature trends and predict future temperatures using real-world data.
-                                                            </li>
-                                                            <li>
-                                                                <b>Tools:</b>IBM Linux One, Python, Jupyter, HTML, Bootstrap
-                                                            </li>
-                                                            <li>
-                                                                <b>Outcome:</b> Forecasted minimum and maximum temperatures for preciding 3 Days with enhanced accuracy, gaining insights into climate patterns.
-                                                            </li>
-                                                           
-                                                        </p>
-                                                        <a href="#" class="smoothscroll btn custom-btn custom-border-btn mt-0 mb-0">View Project</a>
-                                                    </div>
-    
-                                                </div>
-                                            </form>
-                                        </div>
-    
-                                        <div class="col-lg-5 col-12 p-0">
-                                            <div class="project-form-image-wrap">
-                                                
-                                                <img src="images/other/Screenshot 2024-12-24 075144.png" class="project-form-image img-fluid" alt="">
-                                            </div>
-    
-                                        </div>
-                                    </div>
-                                </div>
-    
-                            </div>
-    
-                            <div class="col-lg-10 col-12 mx-auto">
-                                
-                                <div class="project-form-wrap">
-                                    
-                                    <div class="row">
-                                        <div class="col-lg-7 col-12 p-0">
-                                            <form class="custom-form project-form" action="#" method="post" role="form">
-                                                <div class="d-flex">
-                                                    
-                                                    <div class="text-white mb-0 pb-lg-0">
-                                                        <h6 class="text-white">
-                                                            Unemployment Rate Analysis and Employment Status Prediction (1991-2022)
-                                                        </h6>
-                            
-                                                        <p>
-                                                        
-                                                            <li>
-                                                                <b>Objective:</b> Predict unemployment trends using advanced ML techniques.
-
-                                                                                  Utilize socio-economic factors for predictive analytics.
-                                                            </li>
-                                                            <li>
-                                                                <b>Tools:</b> Python, Power BI, ARIMA, Random Forest Classifier
-                                                            </li>
-                                                           
-                                                            <li>
-                                                                <b>Outcome:</b> Developed models to forecast employment trends and statuses, providing valuable insights into labor market dynamics.
-                                                            </li>
-                                                           
-                                                        </p>
-                                                        <a href="#" class="smoothscroll btn custom-btn custom-border-btn mt-0 mb-0">View Project</a>
-                                                    </div>
-    
-                                                </div>
-                                            </form>
-                                        </div>
-    
-                                        <div class="col-lg-5 col-12 p-0">
-                                            <div class="project-form-image-wrap">
-                                                
-                                                <img src="images/other/IMG-20240813-WA0002.png" class="project-form-image img-fluid" alt="">
-                                            </div>
-    
-                                        </div>
-                                    </div>
-                                </div>
-    
-                            </div>
-    
-                            
-                        </div>
+                        <h4 class="text-white">Healthcare System <span class="badge ms-3">DIRISA | (2024)</span></h4>
                         
-                    </section>
+                        <p class="project-paragraph text-white">
+                          Developed predictive models to forecast diseases and allocate healthcare resources efficiently.
+                          <li class="text-white">
+                            <strong >Technologies:</strong> Python, Power BI, NumPy
+                          </li>
+                          
+                          <li class="text-white">
+                            <strong >Features:</strong><br>✔️ Predicted disease trends using machine learning <br>✔️ Designed data-driven solutions to improve healthcare efficiency.
+                          </li>
+                        </p>
+                        
+                        <a href="room-details.html">
+                          <p class="text-decoration-underline text-white m-0 mt-2">View Project</p>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="project-content text-center mt-3">
+                      <h3 class="text-white"><a href="https://mbhonichau.github.io/TelkomHack2024/">Healthcare Analytics</a></h3>
+                      <p><span class="text-primary">AI for Social Good </p>
+                    </div>
+                  </div>
+                  <!-- End Project 3 -->
 
+                  <!-- Project 4 Temperature Analysis -->
+                  <div class="swiper-slide">
+                    <div class="project-item position-relative bg-black rounded-4 overflow-hidden">
+                      <img src="images/other/Temperature.png" 
+                           alt="img" class="post-image img-fluid rounded-4">
+                      <div class="project-description position-absolute p-5 text-start">
+                        
+                        <h4 class="text-white">S.A Temperature Analysis <span class="badge ms-3">DIRISA | (2024)</span></h4>
+                        
+                        <p class="project-paragraph text-white">
+                          Built machine learning models to forecast minimum and maximum temperatures for the next three days based on past climate patterns.
+                          <li class="text-white">
+                            <strong >Technologies:</strong> MATLAB, Python
+                          </li>
+                          
+                          <li class="text-white">
+                            <strong >Features:</strong><br>✔️ Conducted Exploratory Data Analysis (EDA) on climate data.
+                            <br>✔️ Predicted minimum and maximum temperatures for the next three days.
+                          </li>
+                        </p>
+                        
+                        <a href="">
+                          <p class="text-decoration-underline text-white m-0 mt-2">View Project</p>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="project-content text-center mt-3">
+                      <h3 class="text-white"><a href="https://mbhonichau.github.io/TelkomHack2024/">Climate Analytics</a></h3>
+                      <p class="text-primary">Data Science</p>
+                    </div>
+                  </div>
+                  <!-- End Project 4 -->
+
+                  <!-- Project 5 Employment Status-->
+                  <div class="swiper-slide">
+                    <div class="project-item position-relative bg-black rounded-4 overflow-hidden">
+                      <img src="images/other/Employment.jpg" 
+                           alt="img" class="post-image img-fluid rounded-4">
+                      <div class="project-description position-absolute p-5 text-start">
+                        <h4 class="text-white">Employment Status <span class="badge ms-3">DIRISA |(2024)</span></h4>
+                        
+                        <p class="project-paragraph text-white">
+                          Built a classification model to predict an individual’s employment status using machine learning. 
+                          <li class="text-white">
+                            <strong >Technologies:</strong> Python, Random Forest Classifier
+                          </li>
+                          
+                          <li class="text-white">
+                            <strong >Features:</strong><br>✔️ Built a predictive model to classify employment status. 
+                            <br>✔️ Provided insights into labor market trends.
+                          </li>
+                        </p>
+                        <a href="room-details.html">
+                          <p class="text-decoration-underline text-white m-0 mt-2">View Project</p>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="project-content text-center mt-3">
+                      <h3 class="text-white"><a href="room-details.html">Predictive Analytics</a></h3>
+                      <p class="text-primary">Data Science</p>
+                    </div>
+                  </div>
+                  <!-- End Project 5 -->
+
+                  <!-- Project 6 Real-Time Skill Assessment-->
+                  <div class="swiper-slide">
+                    <div class="project-item position-relative bg-black rounded-4 overflow-hidden">
+                      <img src="images/other/Skillmeter360.png" 
+                           alt="img" class="post-image img-fluid rounded-4">
+                      <div class="project-description position-absolute p-5 text-start">
+                        <h4 class="text-white">Assessment Skill Meter<span class="badge ms-3">Telkom | (2024)</span></h4>
+                        
+                        <p class="project-paragraph text-white">
+                          Real-time assessment platform to bridge the skills gap by providing instant feedback, personalized learning recommendations, and progress tracking.
+                          <li class="text-white">
+                            <strong >Technologies:</strong> Python, JavaScript, AI, HTML, CSS
+                          </li>
+                          
+                          <li class="text-white">
+                            <strong >Features:</strong><br>✔️ Assesses competencies as users engage in tasks. 
+                            <br>✔️ Helps in identifying job-ready candidates.
+                          </li>
+                        </p>
+                        <a href="room-details.html">
+                          <p class="text-decoration-underline text-white m-0 mt-2">View Project</p>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="project-content text-center mt-3">
+                      <h3 class="text-white"><a href="room-details.html">AI-Based Learning</a></h3>
+                      <p class="text-primary">EdTech</p>
+                    </div>
+                  </div>
+                  <!-- End Project 6 -->
+
+                  <!-- Project 7 Youth Unemployment-->
+                  <div class="swiper-slide">
+                    <div class="project-item position-relative bg-black rounded-4 overflow-hidden">
+                      <img src="images/other/Youth_unemployment.png" 
+                           alt="img" class="post-image img-fluid rounded-4">
+                      <div class="project-description position-absolute p-5 text-start">
+                        
+                        <h4 class="text-white">Unemployment in Youth <span class="badge ms-3">DIRISA | (2024)</span></h4>
+                        
+                        <p class="project-paragraph text-white">
+                          Developed machine learning models to forecast South Africa’s youth unemployment rates.
+                          <li class="text-white">
+                            <strong >Technologies:</strong> Python, Power BI, NumPy
+                          </li>
+                          
+                          <li class="text-white">
+                            <strong >Features:</strong><br>✔️ Developed forecasting models to analyze unemployment trends.
+                            <br>✔️ Identified key factors influencing the job market.
+                          </li>
+                        </p>
+                        
+                        <a href="room-details.html">
+                          <p class="text-decoration-underline text-white m-0 mt-2">View Project</p>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="project-content text-center mt-3">
+                      <h3 class="text-white"><a href="https://mbhonichau.github.io/TelkomHack2024/">Economic Modeling</a></h3>
+                      <p><span class="text-primary">Data Science</p>
+                    </div>
+                  </div>
+                  <!-- End Project 7 -->
+
+                  <!-- Project 8 Unemployment Rate -->
+                  <div class="swiper-slide">
+                    <div class="project-item position-relative bg-black rounded-4 overflow-hidden">
+                      <img src="images/other/Unemployment.png" 
+                           alt="img" class="post-image img-fluid rounded-4">
+                      <div class="project-description position-absolute p-5 text-start">
+                        
+                        <h4 class="text-white">Unemployment Rate   <span class="badge ms-3">DIRISA | (2024)</span></h4>
+                        
+                        <p class="project-paragraph text-white">
+                          Analyzed historical employment data and applied machine learning models to predict future unemployment rates.
+                          <li class="text-white">
+                            <strong >Technologies:</strong> Python, Power BI, ARIMA, Random Forest
+                          </li>
+                          
+                          <li class="text-white">
+                            <strong >Features:</strong><br>✔️ Cleaned and preprocessed historical employment data.
+                            <br>✔️ Applied ML models to forecast unemployment trends.
+                          </li>
+                        </p>
+                        
+                        <a href="">
+                          <p class="text-decoration-underline text-white m-0 mt-2">View Project</p>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="project-content text-center mt-3">
+                      <h3 class="text-white"><a href="https://mbhonichau.github.io/TelkomHack2024/">Machine Learning</a></h3>
+                      <p><span class="text-primary">Data Science</p>
+                    </div>
+                  </div>
+                  <!-- End Project 8 -->
+
+                  <!-- Project 9 StormShield-->
+                  <div class="swiper-slide">
+                    <div class="project-item position-relative bg-black rounded-4 overflow-hidden">
+                      <img src="images/other/Stormshield.png" 
+                           alt="img" class="post-image img-fluid rounded-4">
+                      <div class="project-description position-absolute p-5 text-start">
+                        <h4 class="text-white">Storm Shield <span class="badge ms-3">IBM-Z | (2024)</span></h4>
+                        <p class="project-paragraph text-white">
+                          Developed a machine learning system to predict extreme weather events and assess their impact on water and sanitation infrastructure in South Africa.
+                          <li class="text-white">
+                            <strong >Technologies:</strong> IBM Linux One, Python, JavaScript, HTML, CSS 
+                          </li>
+                          
+                          <li class="text-white">
+                            <strong >Features:</strong><br>✔️ Evaluates effects on water availability and sanitation.
+                            <br>✔️ Predicts real-time weather conditions & sends alerts.
+                          </li>
+                        </p>
+
+                        <a href="https://jusaqua.co.za/" target="_blank">
+                          <p class="text-decoration-underline text-white m-0 mt-2">View Project</p>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="project-content text-center mt-3">
+                      <h3 class="text-white"><a href="https://jusaqua.co.za/" target="_blank">Sustainability</a></h3>
+                      <p><span class="text-primary">Data Science</p>
+                    </div>
+                  </div>
+                  <!-- End Project 9 -->
+
+                </div>
+
+                <!-- Swiper Pagination -->
+                <div class="swiper-pagination project-pagination position-relative mt-5"></div>
+              </div>
+            </div>
+            <!-- Navigation Buttons -->
             
+            <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+            </a>
+            
+            <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+            </a>
+            
+          </div>
+                <!-- Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
 
+      <!-- Footer -->
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-12 me-auto">
+              <em class="text-white d-block mb-4">Why Work With Me?</em>
+              <p>
+                I’m not just about code—I’m about creating meaningful solutions, driving innovation, and collaborating with others 
+                to build a better technological future. Let’s work together to turn ideas into reality!
+              </p>
+              <ul class="social-icon mt-4">
+                <li class="social-icon-item">
+                  <a href="#" class="social-icon-link bi-facebook"></a>
+                </li>
+                <li class="social-icon-item">
+                  <a href="https://x.com/minthu" target="_new" class="social-icon-link bi-twitter"></a>
+                </li>
+                <li class="social-icon-item">
+                  <a href="https://wa.me/qr/SO5IVW3TCH2PI1" class="social-icon-link bi-whatsapp"></a>
+                </li>
+                <li class="social-icon-item">
+                  <a href="https://github.com/mbhonichau" class="social-icon-link bi-github"></a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-12 mt-4 mb-3 mt-lg-0 mb-lg-0">
+              <em class="text-white d-block mb-4">Contact</em>
+              <p class="d-flex mb-1">
+                <strong class="me-2">Phone:</strong>
+                <a href="tel:72-314-3541" class="site-footer-link">(+27) 72 314 3541</a>
+              </p>
+              <p class="d-flex">
+                <strong class="me-2">Email:</strong>
+                <a href="mailto:mbusocosby93@gmail.com.com" class="site-footer-link">mbusocosby93@gmail.com</a>
+              </p>
+              <p class="d-flex">
+                <strong class="me-3">LinkedIn:</strong>
+                <a href="https://www.linkedin.com/in/mbuso-cosby-ubisi/" class="site-footer-link">Mbuso (Cosby) Ubisi</a>
+              </p>
+            </div>
+            <div class="col-lg-5 col-12">
+              <em class="text-white d-block mb-4">Services</em>
+              <ul class="opening-hours-list">
+                <li class="d-flex">Custom Websites <span class="underline"></span> Java Systems</li>
+                <li class="d-flex">Logo & Branding <span class="underline"></span> Graphic Design</li>
+                <li class="d-flex">UI/UX Design <span class="underline"></span> Technical services</li>
+              </ul>
+            </div>
+            <div class="col-lg-8 col-12 mt-4 text-center">
+              <p class="copyright-text mb-0">2025 Copyright © Mbuso Cosby Ubisi | All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
 
-                <footer class="site-footer">
-                    <div class="container">
-                        <div class="row">
+    <!-- JAVASCRIPT FILES -->
+    <!-- Include jQuery before any script that depends on it -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/vegas.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script>
+      (function ($) {
+        "use strict";
+    
+        // NAVBAR: Close the navbar on link click
+        $('.navbar-collapse a').on('click', function () {
+          $(".navbar-collapse").collapse('hide');
+        });
+    
+        // Hero slides using Vegas
+        $('.hero-slides').vegas({
+          slides: [
+            { src: 'images/slides/53878213140_93cd6217f9_o.jpg' },
+            { src: 'images/photo_2024-12-16_02-57-41.jpg' },
+            { src: 'images/photo_2024-12-16_02-57-57.jpg' },
+            { src: 'images/54029159203_e99c178b95_o.jpg' }
+          ],
+          timer: false,
+          animation: 'kenburns'
+        });
+    
+        // SWIPER INITIALIZATION: 1 slide per view by default, 3 slides on screens 1024px and wider
+        var projectSwiper = new Swiper(".project-swiper", {
+        slidesPerView: 1, // Number of slides visible at once
+        spaceBetween: 20, // Space between slides
+        loop: true, // Infinite looping
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+        nextEl: ".carousel-control-next", // Use your custom button
+        prevEl: ".carousel-control-prev", // Use your custom button
+    },
+        breakpoints: {
+            768: { slidesPerView: 2 }, // 2 slides on tablets
+            1024: { slidesPerView: 3 }, // 3 slides on larger screens
+        }
+    });
 
-                            <div class="col-lg-4 col-12 me-auto">
-                                <em class="text-white d-block mb-4">Why Work With Me?</em>
-
-                                <p>
-                                    
-                                    I’m not just about code—I’m about creating meaningful solutions, driving innovation, and collaborating with others to build a better technological future. Let’s work together to turn ideas into reality!
-                                </p>
-
-                                <ul class="social-icon mt-4">
-                                    <li class="social-icon-item">
-                                        <a href="#" class="social-icon-link bi-facebook">
-                                        </a>
-                                    </li>
-        
-                                    <li class="social-icon-item">
-                                        <a href="https://x.com/minthu" target="_new" class="social-icon-link bi-twitter">
-                                        </a>
-                                    </li>
-
-                                    <li class="social-icon-item">
-                                        <a href="https://wa.me/qr/SO5IVW3TCH2PI1" class="social-icon-link bi-whatsapp">
-                                        </a>
-                                    </li>
-                                    <li class="social-icon-item">
-                                        <a href="https://github.com/mbhonichau" class="social-icon-link bi-github">
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="col-lg-3 col-12 mt-4 mb-3 mt-lg-0 mb-lg-0">
-                                <em class="text-white d-block mb-4">Contact</em>
-
-                                <p class="d-flex mb-1">
-                                    <strong class="me-2">Phone:</strong>
-                                    <a href="tel: 72-314-3541" class="site-footer-link">
-                                        (+27) 
-                                        72 314 3541
-                                    </a>
-                                </p>
-
-                                <p class="d-flex">
-                                    <strong class="me-2">Email:</strong>
-                                    <a href="mailto:mbusocosby93@gmail.com.com" class="site-footer-link">
-                                        mbusocosby93@gmail.com
-                                    </a>
-                                </p>
-
-                                <p class="d-flex">
-                                    <strong class="me-3">LinkedIn:</strong>
-                                    <a href="https://www.linkedin.com/in/mbuso-cosby-ubisi/" class="site-footer-link">
-                                        Mbuso (Cosby) Ubisi
-                                    </a>
-                                </p>
-                            </div>
-
-
-                            <div class="col-lg-5 col-12">
-                                <em class="text-white d-block mb-4">Services</em>
-
-                                <ul class="opening-hours-list">
-                                    <li class="d-flex">
-                                        Custom Websites
-                                        <span class="underline"></span>
-
-                                        Java Systems
-                                    </li>
-
-                                    <li class="d-flex">
-                                        Logo & Branding
-                                        <span class="underline"></span>
-
-                                        Graphic Design
-                                    </li>
-
-                                    <li class="d-flex">
-                                        UI/UX Design
-                                        <span class="underline"></span>
-
-                                        Technical services
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="col-lg-8 col-12 mt-4 text-center">
-                                <p class="copyright-text mb-0">2025 Copyright © Mbuso Cosby Ubisi | All Rights Reserved
-                                </p>
-                            </div>
-                    </div>
-                </footer>
-            </main>
-
-
-        <!-- JAVASCRIPT FILES -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.sticky.js"></script>
-        <script src="js/vegas.min.js"></script>
-        <script src="js/custom.js"></script>
-
-    </body>
+    
+        // Preloader (if the function exists)
+        if (typeof initPreloader === 'function') {
+          initPreloader();
+        } else {
+          console.warn('initPreloader function is not defined.');
+        }
+    
+        // Chocolat (if the function exists)
+        if (typeof initChocolat === 'function') {
+          initChocolat();
+        } else {
+          console.warn('initChocolat function is not defined.');
+        }
+    
+        // Animate on Scroll (AOS)
+        if (typeof AOS !== 'undefined') {
+          AOS.init({
+            duration: 1000,
+            once: true
+          });
+        } else {
+          console.warn('AOS is not loaded.');
+        }
+    
+        // Smooth scrolling for custom links
+        $('.smoothscroll').on('click', function () {
+          var el = $(this).attr('href');
+          var elWrapped = $(el);
+          var header_height = $('.navbar').height() + 60;
+    
+          scrollToDiv(elWrapped, header_height);
+          return false;
+    
+          function scrollToDiv(element, navheight) {
+            var offset = element.offset();
+            var offsetTop = offset.top;
+            var totalScroll = offsetTop - navheight;
+    
+            $('body,html').animate({
+              scrollTop: totalScroll
+            }, 300);
+          }
+        });
+    
+      })(window.jQuery);
+    </script>
+  </body>
 </html>

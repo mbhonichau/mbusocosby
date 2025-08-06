@@ -1032,6 +1032,7 @@ strong {
 
 .scroll-top:hover {
   background-color: rgba(255, 255, 255, 0.527) ;
+  rotate: 1turn;
 }
 
 

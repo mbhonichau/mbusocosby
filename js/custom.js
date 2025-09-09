@@ -11,10 +11,10 @@
     $(function() {
       $('.hero-slides').vegas({
           slides: [
-              { src: 'images/slides/53878213140_93cd6217f9_o.jpg' },
-              { src: 'images/photo_2024-12-16_02-57-41.jpg' },
-              { src: 'images/photo_2024-12-16_02-57-57.jpg' },
-              { src: 'images/54029159203_e99c178b95_o.jpg' }
+              { src: 'images/slides/53878213140_93cd6217f9_o.webp' },
+              { src: 'images/slides/photo_2024-12-16_02-57-41.webp' },
+              { src: 'images/slides/photo_2024-12-16_02-57-57.webp' },
+              { src: 'images/slides/54029159203_e99c178b95_o.webp' }
           ],
           timer: false,
           animation: 'kenburns',

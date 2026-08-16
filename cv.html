@@ -48,7 +48,7 @@
       }
       .cv-subtitle {
         color: #DDA15E;
-        font-size: 1.25rem;
+        font-size: 1.15rem;
         font-weight: 600;
       }
       .contact-badge {
@@ -81,7 +81,7 @@
         align-items: center;
         gap: 10px;
       }
-      .experience-item, .project-item-cv {
+      .experience-item, .project-item-cv, .ref-card {
         background: #182232;
         border: 1px solid #24344d;
         border-radius: 12px;
@@ -152,7 +152,7 @@
         .cv-title { color: #000000 !important; }
         .cv-subtitle { color: #8b4513 !important; }
         .cv-section-title { color: #8b4513 !important; border-bottom: 1px solid #ccc !important; }
-        .experience-item, .project-item-cv {
+        .experience-item, .project-item-cv, .ref-card {
           background: #f8fafc !important;
           border: 1px solid #e2e8f0 !important;
           color: #000000 !important;
@@ -214,168 +214,183 @@
       <div class="cv-container" id="cvContent">
         
         <!-- Header -->
-        <div class="cv-header text-between">
+        <div class="cv-header">
           <div class="row align-items-center">
-            <div class="col-md-8">
-              <h1 class="cv-title cv-editable" data-cv-key="name">Mbuso Cosby Ubisi</h1>
-              <div class="cv-subtitle cv-editable" data-cv-key="title">Software Developer | Enterprise Java Developer | Data Science & ML Specialist</div>
-              <p class="text-slate-400 mt-2 mb-0 small cv-editable" data-cv-key="location"><i class="bi bi-geo-alt-fill text-warning me-1"></i> Pretoria, South Africa</p>
+            <div class="col-md-7">
+              <h1 class="cv-title cv-editable" data-cv-key="name">MBUSO COSBY UBISI</h1>
+              <div class="cv-subtitle cv-editable" data-cv-key="title">Software Developer | Java | Spring Boot | Enterprise Applications</div>
+              <p class="text-slate-400 mt-2 mb-0 small cv-editable" data-cv-key="address"><i class="bi bi-geo-alt-fill text-warning me-1"></i> Address: Johannesburg, South Africa</p>
             </div>
-            <div class="col-md-4 text-md-end mt-3 mt-md-0">
+            <div class="col-md-5 text-md-end mt-3 mt-md-0">
               <div class="d-flex flex-column gap-2 align-items-md-end">
-                <a href="tel:+27723143541" class="contact-badge"><i class="bi bi-telephone-fill text-warning"></i> <span class="cv-editable" data-cv-key="phone">(+27) 72 314 3541</span></a>
+                <a href="tel:+27723143541" class="contact-badge"><i class="bi bi-telephone-fill text-warning"></i> <span class="cv-editable" data-cv-key="phone">+27 72 314 3541 | +27 72 305 5837</span></a>
                 <a href="mailto:mbusocosby93@gmail.com" class="contact-badge"><i class="bi bi-envelope-fill text-warning"></i> <span class="cv-editable" data-cv-key="email">mbusocosby93@gmail.com</span></a>
-                <a href="https://www.linkedin.com/in/mbuso-cosby-ubisi/" target="_blank" class="contact-badge"><i class="bi bi-linkedin text-info"></i> LinkedIn Profile</a>
-                <a href="https://github.com/mbhonichau" target="_blank" class="contact-badge"><i class="bi bi-github text-white"></i> GitHub Repository</a>
+                <a href="https://www.linkedin.com/in/mbuso-cosby-ubisi/" target="_blank" class="contact-badge"><i class="bi bi-linkedin text-info"></i> www.linkedin.com/in/mbuso-cosby-ubisi/</a>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Professional Summary -->
+        <!-- Career Objective -->
         <div>
-          <div class="cv-section-title"><i class="bi bi-person-lines-fill"></i> Professional Summary</div>
-          <p class="text-slate-300 leading-relaxed cv-editable" data-cv-key="summary">
-            Passionate Software Developer at the State Information Technology Agency (SITA SOC Ltd) specializing in enterprise-level Java applications, Spring Boot RESTful microservices, and system modernization for South African public sector infrastructure. Proven track record in national data science competitions (DIRISA Datathon Top 4, IBM Z Datathon, Telkom Hackathon), building predictive machine learning models, time series forecasts, and cloud APIs. Dedicated to writing clean, scalable code and delivering solutions that strengthen national digital infrastructure.
+          <div class="cv-section-title"><i class="bi bi-bullseye"></i> Career Objective</div>
+          <p class="text-slate-300 leading-relaxed cv-editable" data-cv-key="objective">
+            Software Developer with experience building and maintaining enterprise applications within the State Information Technology Agency (SITA). Skilled in Java, Spring Boot, REST APIs, SQL, and web technologies with exposure to full SDLC processes. Seeking opportunities to contribute to scalable, user-focused software solutions in dynamic development teams.
           </p>
+        </div>
+
+        <!-- Education -->
+        <div>
+          <div class="cv-section-title"><i class="bi bi-mortarboard-fill"></i> Education</div>
+          <div class="experience-item">
+            <div class="d-flex justify-content-between flex-wrap align-items-start">
+              <div>
+                <div class="experience-role cv-editable" data-cv-key="edu_degree">Diploma in ICT Application Development | NQF Level 6</div>
+                <div class="experience-company cv-editable" data-cv-key="edu_institution">Walter Sisulu University</div>
+              </div>
+              <div class="experience-date cv-editable" data-cv-key="edu_date"><i class="bi bi-calendar-event me-1"></i> 2022 - 2024</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Core Technical Skills -->
+        <div>
+          <div class="cv-section-title"><i class="bi bi-tools"></i> Core Technical Skills</div>
+          <div class="mb-3">
+            <span class="skill-pill">Java (8+)</span>
+            <span class="skill-pill">Spring Boot</span>
+            <span class="skill-pill">REST APIs</span>
+            <span class="skill-pill">Angular</span>
+            <span class="skill-pill">Thymeleaf</span>
+            <span class="skill-pill">Primefaces</span>
+            <span class="skill-pill">MySQL</span>
+            <span class="skill-pill">Oracle</span>
+            <span class="skill-pill">Git</span>
+            <span class="skill-pill">Maven</span>
+            <span class="skill-pill">Agile</span>
+            <span class="skill-pill">SDLC</span>
+            <span class="skill-pill">Debugging</span>
+            <span class="skill-pill">Performance Optimization</span>
+          </div>
         </div>
 
         <!-- Work Experience -->
         <div>
-          <div class="cv-section-title"><i class="bi bi-briefcase-fill"></i> Professional Experience</div>
+          <div class="cv-section-title"><i class="bi bi-briefcase-fill"></i> Work Experience</div>
 
-          <!-- Job 1 -->
+          <!-- Job 1: SITA -->
           <div class="experience-item">
             <div class="d-flex justify-content-between flex-wrap align-items-start">
               <div>
-                <div class="experience-role cv-editable" data-cv-key="job1_role">Junior Software Developer</div>
-                <div class="experience-company cv-editable" data-cv-key="job1_company">State Information Technology Agency (SITA SOC Ltd)</div>
+                <div class="experience-role cv-editable" data-cv-key="job1_role">Full-Stack Developer</div>
+                <div class="experience-company cv-editable" data-cv-key="job1_company">State Information Technology Agency (SITA)</div>
               </div>
-              <div class="experience-date cv-editable" data-cv-key="job1_date"><i class="bi bi-calendar-event me-1"></i> Apr 2025 – Present | Pretoria, SA</div>
+              <div class="experience-date cv-editable" data-cv-key="job1_date"><i class="bi bi-calendar-event me-1"></i> Apr 2025 – Present</div>
             </div>
             <ul class="text-slate-300 small mt-3 mb-0 ps-3">
-              <li class="mb-1 cv-editable" data-cv-key="job1_b1">Develop and maintain enterprise web applications for South African government departments adhering to SDLC and Agile best practices.</li>
-              <li class="mb-1 cv-editable" data-cv-key="job1_b2">Built scalable backend solutions in Java, Spring Boot, and MVC architecture for secure, multi-tier data processing.</li>
-              <li class="mb-1 cv-editable" data-cv-key="job1_b3">Integrated high-volume enterprise platforms including E-Permits, ICDMS, and PERSAL for seamless data exchange.</li>
-              <li class="mb-1 cv-editable" data-cv-key="job1_b4">Designed and implemented RESTful APIs supporting workflow automation, business process optimization, and system interoperability.</li>
-              <li class="mb-1 cv-editable" data-cv-key="job1_b5">Participate actively in sprint planning, code reviews, deployment pipelines, and production diagnostic support.</li>
+              <li class="mb-1 cv-editable" data-cv-key="job1_b1">Developed and maintained enterprise-grade government applications within SITA.</li>
+              <li class="mb-1 cv-editable" data-cv-key="job1_b2">Built RESTful APIs supporting workflow automation and business processes.</li>
+              <li class="mb-1 cv-editable" data-cv-key="job1_b3">Integrated E-Permits, ICDMS, and PERSAL for secure data exchange.</li>
+              <li class="mb-1 cv-editable" data-cv-key="job1_b4">Optimised SQL queries and improved system performance.</li>
+              <li class="mb-1 cv-editable" data-cv-key="job1_b5">Troubleshot production issues and optimized system performance.</li>
+              <li class="mb-1 cv-editable" data-cv-key="job1_b6">Collaborated in Agile teams, code reviews, and deployments.</li>
             </ul>
           </div>
 
-          <!-- Job 2 -->
+          <!-- Job 2: DIRISA -->
           <div class="experience-item">
             <div class="d-flex justify-content-between flex-wrap align-items-start">
               <div>
-                <div class="experience-role cv-editable" data-cv-key="job2_role">Technical Programming Tutor</div>
-                <div class="experience-company cv-editable" data-cv-key="job2_company">Walter Sisulu University (WSU, BCC)</div>
+                <div class="experience-role cv-editable" data-cv-key="job2_role">Datathon Finalist</div>
+                <div class="experience-company cv-editable" data-cv-key="job2_company">Data Intensive Research Initiative of South Africa (DIRISA)</div>
               </div>
-              <div class="experience-date cv-editable" data-cv-key="job2_date"><i class="bi bi-calendar-event me-1"></i> Jul 2024 – Nov 2024 | East London, SA</div>
+              <div class="experience-date cv-editable" data-cv-key="job2_date"><i class="bi bi-calendar-event me-1"></i> Jun 2024 – Dec 2024</div>
             </div>
             <ul class="text-slate-300 small mt-3 mb-0 ps-3">
-              <li class="mb-1 cv-editable" data-cv-key="job2_b1">Guided undergraduate students in Java object-oriented programming, debugging techniques, and software architecture principles.</li>
-              <li class="mb-1 cv-editable" data-cv-key="job2_b2">Mentored students on data structures, algorithms, computational logic, and practical problem-solving strategies.</li>
-              <li class="mb-1 cv-editable" data-cv-key="job2_b3">Honored with the WSU Faculty Certificate of Recognition for outstanding contribution to academic success and student engagement.</li>
+              <li class="mb-1 cv-editable" data-cv-key="job2_b1">Applied data analysis and machine learning techniques to solve real-world problems.</li>
+              <li class="mb-1 cv-editable" data-cv-key="job2_b2">Performed statistical analysis to identify trends and insights.</li>
+              <li class="mb-1 cv-editable" data-cv-key="job2_b3">Presented data-driven findings to technical and non-technical audiences.</li>
+              <li class="mb-1 cv-editable" data-cv-key="job2_b4">Maintained data accuracy, integrity, and security.</li>
+            </ul>
+          </div>
+
+          <!-- Job 3: WSU Tutor -->
+          <div class="experience-item">
+            <div class="d-flex justify-content-between flex-wrap align-items-start">
+              <div>
+                <div class="experience-role cv-editable" data-cv-key="job3_role">Technical Programming Tutor</div>
+                <div class="experience-company cv-editable" data-cv-key="job3_company">Walter Sisulu University</div>
+              </div>
+              <div class="experience-date cv-editable" data-cv-key="job3_date"><i class="bi bi-calendar-event me-1"></i> Mar 2024 – Nov 2024</div>
+            </div>
+            <ul class="text-slate-300 small mt-3 mb-0 ps-3">
+              <li class="mb-1 cv-editable" data-cv-key="job3_b1">Delivered Java programming tutorials and coding support.</li>
+              <li class="mb-1 cv-editable" data-cv-key="job3_b2">Taught object-oriented programming and Java best practices.</li>
+              <li class="mb-1 cv-editable" data-cv-key="job3_b3">Guided students in data structures, algorithms, and problem-solving.</li>
+              <li class="mb-1 cv-editable" data-cv-key="job3_b4">Assisted students with debugging and software development projects.</li>
             </ul>
           </div>
         </div>
 
-        <!-- Major Projects & Datathon Achievements -->
+        <!-- Project Experience -->
         <div>
-          <div class="cv-section-title"><i class="bi bi-code-slash"></i> Key Projects & Datathon Solutions</div>
+          <div class="cv-section-title"><i class="bi bi-code-slash"></i> Project Experience</div>
 
           <div class="row g-3">
             <div class="col-md-6">
               <div class="project-item-cv h-100">
-                <div class="fw-bold text-white fs-6 cv-editable" data-cv-key="p1_title">⛈️ Storm Shield (IBM Z Datathon 2024)</div>
-                <small class="text-warning d-block mb-2 cv-editable" data-cv-key="p1_tech">IBM DS & ML Platform | IoT | Python | Technical Lead</small>
-                <p class="text-slate-300 small m-0 cv-editable" data-cv-key="p1_desc">Developed a predictive ML system forecasting severe weather events and quantifying their impact on water and sanitation infrastructure in South Africa to protect community health.</p>
+                <div class="fw-bold text-white fs-6 cv-editable" data-cv-key="p1_title">👤 User Management System</div>
+                <small class="text-warning d-block mb-2 cv-editable" data-cv-key="p1_tech">Spring Boot | Thymeleaf | BCrypt | Microservices</small>
+                <p class="text-slate-300 small m-0 cv-editable" data-cv-key="p1_desc">Developed modular backend using Spring Boot and Thymeleaf. Implemented secure authentication (BCrypt) and applied clean Microservices architecture for scalability.</p>
               </div>
             </div>
 
             <div class="col-md-6">
               <div class="project-item-cv h-100">
-                <div class="fw-bold text-white fs-6 cv-editable" data-cv-key="p2_title">🏥 Healthcare Analytics (DIRISA CSIR Datathon Top 4)</div>
-                <small class="text-info d-block mb-2 cv-editable" data-cv-key="p2_tech">Python | Flask REST API | Random Forest | Power BI</small>
-                <p class="text-slate-300 small m-0 cv-editable" data-cv-key="p2_desc">Built dual-focused ML models predicting ICD-10 disease codes, treatment costs, and ICU/ventilator allocation using Altron, NICD, and Stats SA datasets.</p>
+                <div class="fw-bold text-white fs-6 cv-editable" data-cv-key="p2_title">⛈️ Storm Shield System (IBM Z Datathon 2024)</div>
+                <small class="text-info d-block mb-2 cv-editable" data-cv-key="p2_tech">IBM DS & ML Platform | IoT | Python | Technical Lead</small>
+                <p class="text-slate-300 small m-0 cv-editable" data-cv-key="p2_desc">Predictive ML system forecasting extreme weather & water/sanitation infrastructure resilience in South Africa.</p>
               </div>
             </div>
 
             <div class="col-md-6">
               <div class="project-item-cv h-100">
-                <div class="fw-bold text-white fs-6 cv-editable" data-cv-key="p3_title">🎯 Real-Time Skill Assessment (TelkomLearn & Geekulcha)</div>
-                <small class="text-success d-block mb-2 cv-editable" data-cv-key="p3_tech">Python | TensorFlow | Scikit-Learn | IBM Watson</small>
-                <p class="text-slate-300 small m-0 cv-editable" data-cv-key="p3_desc">Co-developed an AI skill assessment platform addressing SA's 63.9% graduate unemployment rate via instant task evaluation and adaptive learning paths.</p>
+                <div class="fw-bold text-white fs-6 cv-editable" data-cv-key="p3_title">🏥 Healthcare Analytics (DIRISA CSIR Datathon Top 4)</div>
+                <small class="text-success d-block mb-2 cv-editable" data-cv-key="p3_tech">Python | Flask REST API | Random Forest | Power BI</small>
+                <p class="text-slate-300 small m-0 cv-editable" data-cv-key="p3_desc">Built predictive ML models for ICD-10 disease detection, treatment cost estimation, and ICU/ventilator resource allocation.</p>
               </div>
             </div>
 
             <div class="col-md-6">
               <div class="project-item-cv h-100">
-                <div class="fw-bold text-white fs-6 cv-editable" data-cv-key="p4_title">🌐 Global Unemployment & SA Temperature Models</div>
-                <small class="text-warning d-block mb-2 cv-editable" data-cv-key="p4_tech">MATLAB Live Scripts | ARIMA | World Bank & ILO Data</small>
-                <p class="text-slate-300 small m-0 cv-editable" data-cv-key="p4_desc">Engineered 31-year time series forecasting models across 266 countries and 13-year MATLAB temperature prediction algorithms for South African climate trends.</p>
+                <div class="fw-bold text-white fs-6 cv-editable" data-cv-key="p4_title">🎯 Real-Time Skill Assessment (TelkomLearn & Geekulcha)</div>
+                <small class="text-warning d-block mb-2 cv-editable" data-cv-key="p4_tech">Python | TensorFlow | Scikit-Learn | IBM Watson</small>
+                <p class="text-slate-300 small m-0 cv-editable" data-cv-key="p4_desc">AI skill assessment platform addressing SA's 63.9% graduate unemployment rate via instant task evaluation.</p>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Technical Skills -->
+        <!-- References -->
         <div>
-          <div class="cv-section-title"><i class="bi bi-tools"></i> Technical Skills & Competencies</div>
-          <div class="mb-3">
-            <span class="text-warning fw-bold small d-block mb-2">Backend & Programming Languages:</span>
-            <span class="skill-pill">Java</span>
-            <span class="skill-pill">Spring Boot</span>
-            <span class="skill-pill">RESTful APIs</span>
-            <span class="skill-pill">Python</span>
-            <span class="skill-pill">SQL</span>
-            <span class="skill-pill">Oracle</span>
-            <span class="skill-pill">JavaScript</span>
-            <span class="skill-pill">PHP</span>
-            <span class="skill-pill">HTML5 / CSS3</span>
-          </div>
+          <div class="cv-section-title"><i class="bi bi-person-check-fill"></i> References</div>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="ref-card">
+                <div class="fw-bold text-white cv-editable" data-cv-key="ref1_name">Rodwell Shibambu</div>
+                <div class="text-warning small cv-editable" data-cv-key="ref1_pos">Advanced Software Developer</div>
+                <div class="text-slate-300 small cv-editable" data-cv-key="ref1_company">State Information Technology Agency (SITA)</div>
+                <div class="text-slate-400 small mt-1 cv-editable" data-cv-key="ref1_contact">Contact: Available Upon Request</div>
+              </div>
+            </div>
 
-          <div class="mb-3">
-            <span class="text-info fw-bold small d-block mb-2">Data Science & ML Tools:</span>
-            <span class="skill-pill">MATLAB</span>
-            <span class="skill-pill">Scikit-Learn</span>
-            <span class="skill-pill">TensorFlow</span>
-            <span class="skill-pill">Pandas & NumPy</span>
-            <span class="skill-pill">ARIMA Time Series</span>
-            <span class="skill-pill">Power BI</span>
-            <span class="skill-pill">Jupyter Notebook</span>
-          </div>
-
-          <div>
-            <span class="text-success fw-bold small d-block mb-2">Enterprise Platforms & Practice:</span>
-            <span class="skill-pill">Agile / Scrum SDLC</span>
-            <span class="skill-pill">Git / GitHub</span>
-            <span class="skill-pill">Flask Microservices</span>
-            <span class="skill-pill">System Integration (PERSAL, E-Permits, ICDMS)</span>
-            <span class="skill-pill">Problem Solving</span>
-          </div>
-        </div>
-
-        <!-- Honours, Awards & Certifications -->
-        <div>
-          <div class="cv-section-title"><i class="bi bi-award-fill"></i> Awards & Professional Certifications</div>
-          <div class="row g-2 text-slate-300 small">
-            <div class="col-md-6 mb-2">
-              <i class="bi bi-trophy-fill text-warning me-2"></i><strong>National Top 4 Finalist:</strong> DIRISA (CSIR) Student Datathon (2024)
-            </div>
-            <div class="col-md-6 mb-2">
-              <i class="bi bi-patch-check-fill text-info me-2"></i><strong>Certificate of Recognition:</strong> Faculty of Engineering & IT, WSU (2024)
-            </div>
-            <div class="col-md-6 mb-2">
-              <i class="bi bi-award-fill text-success me-2"></i><strong>IBM Z Datathon Certificate:</strong> Global IBM Event (2024)
-            </div>
-            <div class="col-md-6 mb-2">
-              <i class="bi bi-check-circle-fill text-warning me-2"></i><strong>MATLAB Onramp Certification:</strong> MathWorks Training Services (2024)
-            </div>
-            <div class="col-md-6 mb-2">
-              <i class="bi bi-award-fill text-primary me-2"></i><strong>CHPC Cluster Competition:</strong> Centre for High Performance Computing (2024)
-            </div>
-            <div class="col-md-6 mb-2">
-              <i class="bi bi-patch-check-fill text-success me-2"></i><strong>IBM Data Science Level 1 & Tools:</strong> IBM Certified (2022)
+            <div class="col-md-6">
+              <div class="ref-card">
+                <div class="fw-bold text-white cv-editable" data-cv-key="ref2_name">Yawa Sibu</div>
+                <div class="text-warning small cv-editable" data-cv-key="ref2_pos">Co-ordinator</div>
+                <div class="text-slate-300 small cv-editable" data-cv-key="ref2_company">Walter Sisulu University</div>
+                <div class="text-slate-400 small mt-1 cv-editable" data-cv-key="ref2_contact">Contact: Available Upon Request</div>
+              </div>
             </div>
           </div>
         </div>
@@ -394,7 +409,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script>
       let isEditMode = false;
-      const CV_STORAGE_KEY = 'mbuso_cv_custom_data_v1';
+      const CV_STORAGE_KEY = 'mbuso_ats_cv_custom_data_v2';
 
       // Load saved edits from LocalStorage on load
       document.addEventListener('DOMContentLoaded', () => {
@@ -465,7 +480,7 @@
       }
 
       function resetCvData() {
-        if (confirm("Are you sure you want to reset your CV back to the original default information?")) {
+        if (confirm("Are you sure you want to reset your CV back to the original document information?")) {
           localStorage.removeItem(CV_STORAGE_KEY);
           location.reload();
         }

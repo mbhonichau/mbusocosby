@@ -164,30 +164,28 @@
                   <div class="swiper-slide">
                     <div class="project-item position-relative bg-black rounded-4 overflow-hidden">
                       <img src="images/other/Healthcare_System.png" 
-                           alt="img" class="post-image img-fluid rounded-4">
-                      <div class="project-description position-absolute p-5 text-start">
-                        
-                        <h4 class="text-white">Healthcare System <span class="badge ms-3">DIRISA | (2024)</span></h4>
-                        
+                           alt="Healthcare System" class="post-image img-fluid rounded-4">
+                      <div class="project-description position-absolute p-4 p-md-5 text-start">
+                        <h4 class="text-white">Healthcare System <span class="badge ms-3 bg-info text-dark">DIRISA | (2024)</span></h4>
                         <p class="project-paragraph text-white">
-                          Developed predictive models to forecast diseases and allocate healthcare resources efficiently.
+                          Predictive ML system for disease detection (ICD-10 codes), treatment cost estimation, and ICU/ventilator allocation in South Africa.
                           <li class="text-white">
-                            <strong >Technologies:</strong> Python, Power BI, NumPy
+                            <strong>Technologies:</strong> Python, Flask, Random Forest, Power BI, Pandas
                           </li>
                           
                           <li class="text-white">
-                            <strong >Features:</strong><br>✔️ Predicted disease trends using machine learning <br>✔️ Designed data-driven solutions to improve healthcare efficiency.
+                            <strong>Data Sources:</strong> Altron Records, NICD COVID Data, Stats SA, OpenStreetMap GIS
                           </li>
                         </p>
-                        
-                        <a href="">
-                          <p class="text-decoration-underline text-white m-0 mt-2">View Project</p>
+
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#healthcareModal">
+                          <p class="text-decoration-underline text-info fw-bold m-0 mt-2"><i class="bi bi-info-circle-fill me-1"></i> View Full Project Info & API Demo</p>
                         </a>
                       </div>
                     </div>
                     <div class="project-content text-center mt-3">
-                      <h3 class="text-white"><a href="https://mbhonichau.github.io/TelkomHack2024/">Healthcare Analytics</a></h3>
-                      <p><span class="text-primary">AI for Social Good </p>
+                      <h3 class="text-white"><a href="#" data-bs-toggle="modal" data-bs-target="#healthcareModal">Healthcare Disease & Resource ML</a></h3>
+                      <p><span class="text-primary">Healthcare Analytics & AI</span></p>
                     </div>
                   </div>
                   <!-- End Project 3 -->
@@ -777,6 +775,185 @@
 
           </div>
           <div class="modal-footer border-secondary border-top p-3" style="background-color: #1a1a1a;">
+            <button type="button" class="btn btn-secondary px-4 rounded-pill" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Healthcare Analytics Project Details -->
+    <div class="modal fade" id="healthcareModal" tabindex="-1" aria-labelledby="healthcareModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content bg-dark text-white border-0 rounded-4 shadow-lg">
+          <div class="modal-header border-secondary border-bottom p-4 position-relative" style="background: linear-gradient(135deg, #112233 0%, #1c3b57 100%);">
+            <div>
+              <span class="badge bg-info text-dark fs-6 mb-2"><i class="bi bi-activity me-1"></i> DIRISA Datathon (2024)</span>
+              <h3 class="modal-title text-white fw-bold" id="healthcareModalLabel">Healthcare Disease Detection & Resource Allocation Model</h3>
+              <p class="text-white-50 m-0 fs-6">AI-Driven Predictive Healthcare System & Resource Optimization for South Africa</p>
+            </div>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4 p-md-5" style="background-color: #0f172a;">
+            
+            <!-- Quick Highlights Banner -->
+            <div class="row g-3 mb-5 text-center">
+              <div class="col-md-3 col-6">
+                <div class="p-3 rounded-3" style="background: #1e293b; border: 1px solid #334155;">
+                  <i class="bi bi-heart-pulse-fill fs-2 text-danger"></i>
+                  <h5 class="text-white mt-2 mb-0">Disease Detection</h5>
+                  <small class="text-white-50">ICD-10 Code Classification</small>
+                </div>
+              </div>
+              <div class="col-md-3 col-6">
+                <div class="p-3 rounded-3" style="background: #1e293b; border: 1px solid #334155;">
+                  <i class="bi bi-hospital-fill fs-2 text-info"></i>
+                  <h5 class="text-white mt-2 mb-0">Resource Allocation</h5>
+                  <small class="text-white-50">ICU & Ventilator Forecasting</small>
+                </div>
+              </div>
+              <div class="col-md-3 col-6">
+                <div class="p-3 rounded-3" style="background: #1e293b; border: 1px solid #334155;">
+                  <i class="bi bi-currency-dollar fs-2 text-success"></i>
+                  <h5 class="text-white mt-2 mb-0">Cost Prediction</h5>
+                  <small class="text-white-50">Random Forest Regressor</small>
+                </div>
+              </div>
+              <div class="col-md-3 col-6">
+                <div class="p-3 rounded-3" style="background: #1e293b; border: 1px solid #334155;">
+                  <i class="bi bi-cloud-arrow-up-fill fs-2 text-warning"></i>
+                  <h5 class="text-white mt-2 mb-0">Flask Web API</h5>
+                  <small class="text-white-50">JSON Inference Engine</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="row g-4">
+              <!-- Left Column: Problem, Solution & Interactive Prediction Simulation -->
+              <div class="col-lg-7">
+                
+                <!-- Problem Statement -->
+                <div class="mb-4 p-4 rounded-4" style="background: #1e293b; border-left: 4px solid #ef4444;">
+                  <h4 class="text-danger mb-3"><i class="bi bi-exclamation-octagon-fill me-2"></i>Problem Statement</h4>
+                  <p class="text-slate-300 fs-6 leading-relaxed">
+                    South Africa’s healthcare system faces critical challenges, including resource shortages, delayed outbreak responses, and inefficient resource allocation. Hospitals lack staff, beds, and medications, while patients in underserved areas struggle with limited access to care. Healthcare workers face burnout due to high workloads, and fragmented data systems hinder timely government responses to diseases like tuberculosis and COVID-19.
+                  </p>
+                </div>
+
+                <!-- Dual-Focused Solution -->
+                <div class="mb-4 p-4 rounded-4" style="background: #1e293b; border-left: 4px solid #38bdf8;">
+                  <h4 class="text-info mb-3"><i class="bi bi-shield-check me-2"></i>Proposed Solution</h4>
+                  <div class="row g-3 text-slate-300">
+                    <div class="col-md-6">
+                      <div class="p-3 rounded-3" style="background: #0f172a;">
+                        <h6 class="text-info"><i class="bi bi-1-circle-fill me-2"></i>Early Disease Detection</h6>
+                        <small class="text-white-50">Predicts specific ICD-10 codes and medical conditions early based on symptom severity, patient history, and demographics.</small>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="p-3 rounded-3" style="background: #0f172a;">
+                        <h6 class="text-info"><i class="bi bi-2-circle-fill me-2"></i>Resource Allocation Optimization</h6>
+                        <small class="text-white-50">Predicts required ICU beds, ventilator usage, and treatment costs to prevent hospital bottlenecks.</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- API & Flask Web Application Integration -->
+                <div class="mb-4 p-4 rounded-4" style="background: #1e293b; border: 1px solid #334155;">
+                  <h4 class="text-white mb-3"><i class="bi bi-code-square me-2 text-warning"></i>Flask Web Application & API Simulation</h4>
+                  <p class="text-white-50 small mb-3">Live JSON prediction endpoint example (<code>/predict</code> API):</p>
+
+                  <div class="p-3 rounded-3 font-monospace small mb-3" style="background: #090d16; border: 1px solid #1e293b;">
+                    <div class="text-success">// Sample JSON Request Payload</div>
+                    <div class="text-slate-300">{ "age": 50, "gender": "Female", "icd_code": "I00", "symptom_severity": "Medium", "treatment_duration": 10 }</div>
+                    <hr class="border-secondary my-2">
+                    <div class="text-info">// Simulated Model Prediction Response</div>
+                    <div class="text-warning">{<br>
+                    &nbsp;&nbsp;"predicted_icd": "I00 (Acute Rheumatic Fever)",<br>
+                    &nbsp;&nbsp;"predicted_icu": 0,<br>
+                    &nbsp;&nbsp;"predicted_ventilator": 0,<br>
+                    &nbsp;&nbsp;"predicted_cost": "R3,500.00"<br>
+                    }</div>
+                  </div>
+                </div>
+
+                <!-- Power BI Dashboard Highlights -->
+                <div class="mb-4 p-4 rounded-4" style="background: #1e293b; border: 1px solid #334155;">
+                  <h4 class="text-white mb-3"><i class="bi bi-pie-chart-fill me-2 text-warning"></i>Power BI Analytics Dashboard</h4>
+                  <p class="text-white-50 small mb-3">Integrated executive dashboard for hospital administrators tracking capacity, outbreak trends, and cost efficiency:</p>
+                  
+                  <div class="row g-2 text-center">
+                    <div class="col-4">
+                      <div class="p-2 rounded" style="background: #0f172a;">
+                        <span class="d-block text-info fw-bold">ICU Bed Occupancy</span>
+                        <small class="text-white-50">Real-Time Forecast</small>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="p-2 rounded" style="background: #0f172a;">
+                        <span class="d-block text-warning fw-bold">Disease Code Trends</span>
+                        <small class="text-white-50">ICD-10 Distribution</small>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="p-2 rounded" style="background: #0f172a;">
+                        <span class="d-block text-success fw-bold">Treatment Cost Variance</span>
+                        <small class="text-white-50">Budget Allocation</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Right Column: Data Sources, Tech Stack, Considerations & Impact -->
+              <div class="col-lg-5">
+
+                <!-- Data Sources -->
+                <div class="mb-4 p-4 rounded-4" style="background: #1e293b;">
+                  <h4 class="text-white mb-3"><i class="bi bi-database-check me-2 text-success"></i>Data Sources</h4>
+                  <ul class="list-unstyled text-white-50 small mb-0">
+                    <li class="mb-2"><i class="bi bi-file-earmark-medical text-info me-2"></i><strong>Altron Medical Records:</strong> Anonymized clinical and patient history database.</li>
+                    <li class="mb-2"><i class="bi bi-geo-alt-fill text-warning me-2"></i><strong>OpenStreetMap GIS Data:</strong> Spatial data mapping regional healthcare facility access.</li>
+                    <li class="mb-2"><i class="bi bi-virus text-danger me-2"></i><strong>NICD COVID-19 Data:</strong> Communicable disease outbreak statistics.</li>
+                    <li class="mb-2"><i class="bi bi-bar-chart text-primary me-2"></i><strong>Stats SA Demographics:</strong> Regional population metrics and risk stratification.</li>
+                  </ul>
+                </div>
+
+                <!-- Technical Architecture -->
+                <div class="mb-4 p-4 rounded-4" style="background: #1e293b;">
+                  <h4 class="text-white mb-3"><i class="bi bi-gear-fill me-2 text-warning"></i>Model Training & Architecture</h4>
+                  <ul class="list-unstyled text-white-50 small mb-0">
+                    <li class="mb-2"><strong>Treatment Cost:</strong> <code>RandomForestRegressor</code> trained on scaled financial metrics.</li>
+                    <li class="mb-2"><strong>Disease Classification:</strong> <code>RandomForestClassifier</code> mapping multi-label ICD-10 codes.</li>
+                    <li class="mb-2"><strong>Resource Allocation:</strong> Binary classifier predicting ICU and Ventilator necessity.</li>
+                    <li class="mb-2"><strong>Model Persistence:</strong> Serialized using <code>joblib</code> (<code>.pkl</code> binaries).</li>
+                    <li class="mb-2"><strong>Backend Server:</strong> Flask microservice handling HTTP POST requests.</li>
+                  </ul>
+                </div>
+
+                <!-- Impact & Scalability -->
+                <div class="mb-4 p-4 rounded-4" style="background: linear-gradient(145deg, #162436 0%, #1e3a5f 100%); border: 1px solid #38bdf8;">
+                  <h4 class="text-info mb-2"><i class="bi bi-graph-up-arrow me-2"></i>Impact & Scalability</h4>
+                  <p class="text-white-50 small mb-2"><strong>Impact:</strong> Reduces healthcare worker burnout, improves clinical outcomes, and guarantees equitable resource distribution for rural & underserved populations.</p>
+                  <p class="text-white-50 small m-0"><strong>Scalability:</strong> Highly adaptable for regional expansion, diverse health datasets, and cloud deployment.</p>
+                </div>
+
+                <!-- Challenges & Privacy -->
+                <div class="p-4 rounded-4" style="background: #1e293b;">
+                  <h4 class="text-white mb-2"><i class="bi bi-shield-lock-fill me-2 text-danger"></i>Challenges & Considerations</h4>
+                  <ul class="text-white-50 small mb-0 ps-3">
+                    <li class="mb-1"><strong>Data Quality:</strong> Cleaned & preprocessed missing data using Pandas & <code>StandardScaler</code>.</li>
+                    <li class="mb-1"><strong>Privacy & POPIA:</strong> Rigorous anonymization of patient records conforming to healthcare laws.</li>
+                    <li class="mb-1"><strong>Cloud Infrastructure:</strong> High-availability deployment for real-time decision support.</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer border-secondary border-top p-3" style="background-color: #0f172a;">
             <button type="button" class="btn btn-secondary px-4 rounded-pill" data-bs-dismiss="modal">Close</button>
           </div>
         </div>

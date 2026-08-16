@@ -30,6 +30,11 @@ Welcome to my digital portfolio showcasing software development, data science, m
 - **Data Sources**: World Bank, International Labour Organization (ILO), National Statistics Agencies.
 - **Metrics & Insights**: Evaluated using MAE, RMSE, and R-squared ($R^2$). Forecasts 2023 global trends driven by post-pandemic recovery, inflation, and geopolitical conflicts.
 
+### ☀️ South African Temperature Analysis & Forecasting Model (DIRISA 2024 - Opti-Num & MathWorks)
+- **Overview**: Time series machine learning model analyzing 13 years (June 2011 to July 2024) of real-world South African weather station data to predict 3-day minimum and maximum temperatures.
+- **Architecture**: Given a target date and 30 days of past min/max temperature history, forecasts proceeding 3-day temperatures.
+- **Tech Stack**: MATLAB Live Scripts (`.mlx`), Time Series ML, `.mat` workspace variables, MATLAB Drive, MathWorks Onramp suite.
+
 ### 💻 Enterprise & Client Web Applications
 - Custom web applications, enterprise platform integration (E-Permits, ICDMS, PERSAL), and responsive web solutions.
 

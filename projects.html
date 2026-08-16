@@ -194,31 +194,30 @@
                   <div class="swiper-slide">
                     <div class="project-item position-relative bg-black rounded-4 overflow-hidden">
                       <img src="images/other/Temperature.png" 
-                           alt="img" class="post-image img-fluid rounded-4">
-                      <div class="project-description position-absolute p-5 text-start">
+                           alt="S.A Temperature Analysis" class="post-image img-fluid rounded-4">
+                      <div class="project-description position-absolute p-4 p-md-5 text-start">
                         
-                        <h4 class="text-white">S.A Temperature Analysis <span class="badge ms-3">DIRISA | (2024)</span></h4>
+                        <h4 class="text-white">S.A Temperature Analysis <span class="badge ms-3 bg-warning text-dark">DIRISA | (2024)</span></h4>
                         
                         <p class="project-paragraph text-white">
-                          Built machine learning models to forecast minimum and maximum temperatures for the next three days based on past climate patterns.
+                          Climate forecasting ML model & 13-year weather station EDA (2011–2024) predicting 3-day min/max temperatures from 30-day climate windows.
                           <li class="text-white">
-                            <strong >Technologies:</strong> MATLAB, Python
+                            <strong>Partners:</strong> DIRISA, Opti-Num Solutions, MathWorks
                           </li>
                           
                           <li class="text-white">
-                            <strong >Features:</strong><br>✔️ Conducted Exploratory Data Analysis (EDA) on climate data.
-                            <br>✔️ Predicted minimum and maximum temperatures for the next three days.
+                            <strong>Technologies:</strong> MATLAB Live Scripts (.mlx), Time Series ML, .mat Workspaces
                           </li>
                         </p>
                         
-                        <a href="">
-                          <p class="text-decoration-underline text-white m-0 mt-2">View Project</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#temperatureModal">
+                          <p class="text-decoration-underline text-warning fw-bold m-0 mt-2"><i class="bi bi-info-circle-fill me-1"></i> View MATLAB Model & EDA Report</p>
                         </a>
                       </div>
                     </div>
                     <div class="project-content text-center mt-3">
-                      <h3 class="text-white"><a href="https://mbhonichau.github.io/TelkomHack2024/">Climate Analytics</a></h3>
-                      <p class="text-primary">Data Science</p>
+                      <h3 class="text-white"><a href="#" data-bs-toggle="modal" data-bs-target="#temperatureModal">Climate Temperature Forecasting</a></h3>
+                      <p class="text-primary">MATLAB Time Series ML</p>
                     </div>
                   </div>
                   <!-- End Project 4 -->
@@ -1133,6 +1132,120 @@
 
           </div>
           <div class="modal-footer border-secondary border-top p-3" style="background-color: #19130a;">
+            <button type="button" class="btn btn-secondary px-4 rounded-pill" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for SA Temperature Analysis (MathWorks / Opti-Num / DIRISA) -->
+    <div class="modal fade" id="temperatureModal" tabindex="-1" aria-labelledby="temperatureModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content bg-dark text-white border-0 rounded-4 shadow-lg">
+          <div class="modal-header border-secondary border-bottom p-4 position-relative" style="background: linear-gradient(135deg, #1b263b 0%, #0d1b2a 100%);">
+            <div>
+              <span class="badge bg-warning text-dark fs-6 mb-2"><i class="bi bi-thermometer-half me-1"></i> DIRISA | Opti-Num Solutions | MathWorks (2024)</span>
+              <h3 class="modal-title text-white fw-bold" id="temperatureModalLabel">South African Temperature Data Analysis & Forecasting Model</h3>
+              <p class="text-white-50 m-0 fs-6">13-Year Climate Dataset (2011–2024), MATLAB Live Scripts, Time Series ML & 3-Day Temperature Forecasting</p>
+            </div>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4 p-md-5" style="background-color: #0b131f;">
+            
+            <!-- Quick Highlights Banner -->
+            <div class="row g-3 mb-5 text-center">
+              <div class="col-md-3 col-6">
+                <div class="p-3 rounded-3" style="background: #172a45; border: 1px solid #233d60;">
+                  <i class="bi bi-calendar3 fs-2 text-warning"></i>
+                  <h5 class="text-white mt-2 mb-0">June 2011–July 2024</h5>
+                  <small class="text-white-50">13-Year Historical Dataset</small>
+                </div>
+              </div>
+              <div class="col-md-3 col-6">
+                <div class="p-3 rounded-3" style="background: #172a45; border: 1px solid #233d60;">
+                  <i class="bi bi-window-sidebar fs-2 text-info"></i>
+                  <h5 class="text-white mt-2 mb-0">30-Day Window</h5>
+                  <small class="text-white-50">Input Min & Max History</small>
+                </div>
+              </div>
+              <div class="col-md-3 col-6">
+                <div class="p-3 rounded-3" style="background: #172a45; border: 1px solid #233d60;">
+                  <i class="bi bi-arrow-right-circle-fill fs-2 text-success"></i>
+                  <h5 class="text-white mt-2 mb-0">3-Day Forecast</h5>
+                  <small class="text-white-50">Proceeding Min/Max Temp</small>
+                </div>
+              </div>
+              <div class="col-md-3 col-6">
+                <div class="p-3 rounded-3" style="background: #172a45; border: 1px solid #233d60;">
+                  <i class="bi bi-code-square fs-2 text-primary"></i>
+                  <h5 class="text-white mt-2 mb-0">MATLAB Suite</h5>
+                  <small class="text-white-50">Live Script (.mlx) & .mat</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="row g-4">
+              <!-- Left Column: Challenge Overview & ML Model Workflow -->
+              <div class="col-lg-7">
+                
+                <div class="mb-4 p-4 rounded-4" style="background: #132238; border-left: 4px solid #38bdf8;">
+                  <h4 class="text-info mb-3"><i class="bi bi-cloud-sun-fill me-2"></i>Challenge Overview & Partners</h4>
+                  <p class="text-slate-300 fs-6 leading-relaxed">
+                    Brought to you by <strong>Opti-Num Solutions</strong>, <strong>MathWorks</strong>, and <strong>DIRISA</strong>, this challenge elevates technological literacy and climate data-driven decision-making in South Africa. Using real-world weather station readings from June 2011 to July 2024, the solution explores climate trends and deploys time series machine learning forecasting.
+                  </p>
+                </div>
+
+                <div class="mb-4 p-4 rounded-4" style="background: #132238; border-left: 4px solid #f59e0b;">
+                  <h4 class="text-warning mb-3"><i class="bi bi-cpu-fill me-2"></i>Machine Learning Forecasting Architecture</h4>
+                  <p class="text-slate-300 small mb-2">The model structure takes past environmental parameters to forecast future proceeding temperatures:</p>
+                  <ul class="text-slate-300 small mb-0 ps-3">
+                    <li class="mb-2"><strong>Input Window:</strong> Given a target date, the model processes the <strong>past 30 days</strong> of minimum and maximum daily temperature readings.</li>
+                    <li class="mb-2"><strong>Output Prediction:</strong> The AI model predicts the minimum and maximum temperatures for the <strong>proceeding 3 days</strong>.</li>
+                    <li class="mb-2"><strong>Exploratory Data Analysis (EDA):</strong> Deep dive analysis into seasonal cycles, heatwave trends, winter drop points, and station anomalies over 13 years.</li>
+                  </ul>
+                </div>
+
+                <div class="mb-4 p-4 rounded-4" style="background: #132238; border: 1px solid #38bdf833;">
+                  <h4 class="text-white mb-3"><i class="bi bi-journal-code me-2 text-success"></i>MATLAB Live Script & Artifact Deliverables</h4>
+                  <p class="text-white-50 small mb-2">The project submission is structured in MATLAB for full reproducible execution:</p>
+                  <ul class="text-white-50 small mb-0 ps-3">
+                    <li><strong>MATLAB Live Script (<code>.mlx</code>):</strong> Interactive code notebook integrating markdown reasoning, EDA graphics, model equations, and performance evaluation.</li>
+                    <li><strong>Workspace Binary File (<code>.mat</code>):</strong> Contains all trained model objects, feature matrices, and workspace variables.</li>
+                    <li><strong>MATLAB Drive Deployment:</strong> Shared workspace folder setup for instant cloud verification.</li>
+                  </ul>
+                </div>
+
+              </div>
+
+              <!-- Right Column: Learning Courses, Performance & Contact Info -->
+              <div class="col-lg-5">
+
+                <div class="mb-4 p-4 rounded-4" style="background: #132238;">
+                  <h4 class="text-white mb-3"><i class="bi bi-award-fill me-2 text-warning"></i>MathWorks Training & Certification</h4>
+                  <ul class="list-unstyled text-white-50 small mb-0">
+                    <li class="mb-2"><i class="bi bi-patch-check-fill text-success me-2"></i><strong>MATLAB Onramp:</strong> Self-paced proficiency course completed via MathWorks Training Services.</li>
+                    <li class="mb-2"><i class="bi bi-patch-check-fill text-success me-2"></i><strong>Machine Learning Onramp:</strong> Specialized time series forecasting and classification modules.</li>
+                  </ul>
+                </div>
+
+                <div class="mb-4 p-4 rounded-4" style="background: #132238;">
+                  <h4 class="text-white mb-3"><i class="bi bi-graph-up me-2 text-info"></i>Model Performance & Enhancements</h4>
+                  <p class="text-white-50 small m-0 leading-relaxed">
+                    Evaluated model performance using mean error margins against 13-year temperature bounds. Enhancements include integrating relative humidity, atmospheric pressure, and satellite spatial weather layers to refine 3-day predictive accuracy.
+                  </p>
+                </div>
+
+                <div class="p-4 rounded-4" style="background: linear-gradient(145deg, #182e4a 0%, #0d1b2a 100%); border: 1px solid #38bdf8;">
+                  <h4 class="text-info mb-2"><i class="bi bi-building me-2"></i>Challenge Organizers</h4>
+                  <p class="text-white-50 small mb-1"><strong>Opti-Num Solutions & MathWorks South Africa</strong></p>
+                  <small class="text-white-50 d-block">Hyde Park, Johannesburg | support@optinum.co.za</small>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer border-secondary border-top p-3" style="background-color: #0b131f;">
             <button type="button" class="btn btn-secondary px-4 rounded-pill" data-bs-dismiss="modal">Close</button>
           </div>
         </div>

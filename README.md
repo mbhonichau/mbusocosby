@@ -19,6 +19,12 @@ Welcome to my digital portfolio showcasing software development, data science, m
 - **Tech Stack**: Python, Flask REST API (`app.py`), Scikit-Learn, Joblib, Pandas, StandardScaler, Power BI Dashboards.
 - **Data Sources**: Altron Medical Records, OpenStreetMap GIS Data, NICD COVID-19 Data, Stats SA Demographic Data.
 
+### 🎯 Real-Time Skill Assessment Tool & Guidance Platform (TelkomLearnHack & Geekulcha 2024)
+- **Overview**: AI-powered platform designed to address South Africa's 63.9% graduate unemployment rate (StatsSA Q2 2023) by dynamically assessing competencies during hands-on tasks and offering instant feedback.
+- **Key Features**: Instant task evaluation engine, personalized learning recommendations, visual progress tracking, and gamification badges.
+- **Tech Stack**: Python, TensorFlow, Scikit-Learn, IBM Watson Assistant, Google Cloud NLP, Open edX LMS, Firebase, Mixpanel.
+- **Team**: Kgaugelo Mmakola, Kgomotso Dube, Samual Koranteng Amoha Bampo, Mbuso Ubisi, Nomvulo Mafuta.
+
 ### 💼 Employment Status Prediction (2012-2022) & 2023 Forecast (DIRISA 2024)
 - **Overview**: Predictive machine learning model built using Random Forest Classifier to predict individual employment status based on socio-economic predictors (age, education level, job search status, social support grants).
 - **Tech & Methodology**: Scikit-Learn, Pandas, Seaborn, Matplotlib, Confusion Matrix & Model Accuracy evaluation.

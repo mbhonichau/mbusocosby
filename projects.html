@@ -83,8 +83,8 @@
                 <div>
                   <h2 class="text-white mt-4"><strong>Explore my Projects</strong></h2>
                 </div>
-                <a href="room.html" class="btn btn-arrow btn-primary mt-8">
-                  <span>Click to View project info.
+                <a href="#" data-bs-toggle="modal" data-bs-target="#stormShieldModal" class="btn btn-arrow btn-primary mt-8">
+                  <span>Click to View Featured Project Info
                     <svg width="6" height="6">
                       <use xlink:href="#arrow-right"></use>
                     </svg>
@@ -357,29 +357,28 @@
                   <div class="swiper-slide">
                     <div class="project-item position-relative bg-black rounded-4 overflow-hidden">
                       <img src="images/other/Stormshield.png" 
-                           alt="img" class="post-image img-fluid rounded-4">
-                      <div class="project-description position-absolute p-5 text-start">
-                        <h4 class="text-white">Storm Shield <span class="badge ms-3">IBM-Z | (2024)</span></h4>
+                           alt="Storm Shield Project" class="post-image img-fluid rounded-4">
+                      <div class="project-description position-absolute p-4 p-md-5 text-start">
+                        <h4 class="text-white">Storm Shield <span class="badge ms-3 bg-warning text-dark">IBM-Z | (2024)</span></h4>
                         <p class="project-paragraph text-white">
-                          Developed a machine learning system to predict extreme weather events and assess their impact on water and sanitation infrastructure in South Africa.
+                          Predictive ML system forecasting severe weather & analyzing water/sanitation infrastructure resilience in South Africa.
                           <li class="text-white">
-                            <strong >Technologies:</strong> IBM Linux One, Python, JavaScript, HTML, CSS 
+                            <strong>Technologies:</strong> IBM DS & ML Platform, Public Datasets, IoT, Python
                           </li>
                           
                           <li class="text-white">
-                            <strong >Features:</strong><br>✔️ Evaluates effects on water availability and sanitation.
-                            <br>✔️ Predicts real-time weather conditions & sends alerts.
+                            <strong>Team & Roles:</strong> Mbuso Ubisi (Tech Lead), A. Bakubaku, Y. Ngqolana, S. Lugalo, I. Nondlazi
                           </li>
                         </p>
 
-                        <a href="https://jusaqua.co.za/" target="_blank">
-                          <p class="text-decoration-underline text-white m-0 mt-2">View Project</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#stormShieldModal">
+                          <p class="text-decoration-underline text-warning fw-bold m-0 mt-2"><i class="bi bi-info-circle-fill me-1"></i> View Full Project Info & Prototype</p>
                         </a>
                       </div>
                     </div>
                     <div class="project-content text-center mt-3">
-                      <h3 class="text-white"><a href="https://jusaqua.co.za/" target="_blank">Sustainability</a></h3>
-                      <p><span class="text-primary">Data Science</p>
+                      <h3 class="text-white"><a href="#" data-bs-toggle="modal" data-bs-target="#stormShieldModal">Storm Shield (IBM ML)</a></h3>
+                      <p><span class="text-primary">Climate & Water Sanitation ML</span></p>
                     </div>
                   </div>
                   <!-- End Project 9 -->
@@ -556,5 +555,233 @@
     
       })(window.jQuery);
     </script>
+
+    <!-- Modal for Storm Shield Project Details -->
+    <div class="modal fade" id="stormShieldModal" tabindex="-1" aria-labelledby="stormShieldModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content bg-dark text-white border-0 rounded-4 shadow-lg">
+          <div class="modal-header border-secondary border-bottom p-4 position-relative" style="background: linear-gradient(135deg, #1a1a1a 0%, #2c1a0e 100%);">
+            <div>
+              <span class="badge bg-warning text-dark fs-6 mb-2"><i class="bi bi-cpu-fill me-1"></i> IBM Z Datathon (2024)</span>
+              <h3 class="modal-title text-white fw-bold" id="stormShieldModalLabel">Storm Shield: Severe Weather & Water/Sanitation System</h3>
+              <p class="text-white-50 m-0 fs-6">Machine Learning-Driven Climate Resilience & Infrastructure Management in South Africa</p>
+            </div>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4 p-md-5" style="background-color: #121212;">
+            
+            <!-- Quick Highlights Banner -->
+            <div class="row g-3 mb-5 text-center">
+              <div class="col-md-3 col-6">
+                <div class="p-3 rounded-3" style="background: #1e1e1e; border: 1px solid #333;">
+                  <i class="bi bi-cloud-lightning-rain fs-2 text-warning"></i>
+                  <h5 class="text-white mt-2 mb-0">Predictive ML</h5>
+                  <small class="text-white-50">Weather Forecast & Impact</small>
+                </div>
+              </div>
+              <div class="col-md-3 col-6">
+                <div class="p-3 rounded-3" style="background: #1e1e1e; border: 1px solid #333;">
+                  <i class="bi bi-droplet-half fs-2 text-info"></i>
+                  <h5 class="text-white mt-2 mb-0">Water Quality</h5>
+                  <small class="text-white-50">Sanitation Protection</small>
+                </div>
+              </div>
+              <div class="col-md-3 col-6">
+                <div class="p-3 rounded-3" style="background: #1e1e1e; border: 1px solid #333;">
+                  <i class="bi bi-cpu fs-2 text-primary"></i>
+                  <h5 class="text-white mt-2 mb-0">IBM Platform</h5>
+                  <small class="text-white-50">Data Science Suite</small>
+                </div>
+              </div>
+              <div class="col-md-3 col-6">
+                <div class="p-3 rounded-3" style="background: #1e1e1e; border: 1px solid #333;">
+                  <i class="bi bi-people-fill fs-2 text-success"></i>
+                  <h5 class="text-white mt-2 mb-0">Community</h5>
+                  <small class="text-white-50">Real-Time Alerts & Action</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="row g-4">
+              <!-- Left Column: Problem, Solution & Prototype Dashboard -->
+              <div class="col-lg-7">
+                
+                <!-- Abstract & Problem Statement -->
+                <div class="mb-4 p-4 rounded-4" style="background: #181818; border-left: 4px solid #BC6C25;">
+                  <h4 class="text-warning mb-3"><i class="bi bi-exclamation-triangle-fill me-2"></i>Problem Statement</h4>
+                  <p class="text-white-50 fs-6 leading-relaxed">
+                    Even though weather forecasts have improved, people in South Africa still struggle with water and sanitation during extreme weather like heavy rains and droughts. These challenges often lead to flooding, dirty water, and higher risks of diseases that spread through water.
+                  </p>
+                </div>
+
+                <!-- Innovative Solutions -->
+                <div class="mb-4 p-4 rounded-4" style="background: #181818; border-left: 4px solid #2a9d8f;">
+                  <h4 class="text-info mb-3"><i class="bi bi-lightbulb-fill me-2"></i>Innovative Solutions</h4>
+                  <p class="text-white-50 fs-6 leading-relaxed">
+                    This project aims to create a system that uses machine learning to predict severe weather and understand how it affects water and sanitation systems. By using IBM’s tools and public data like past weather reports, water quality records, and infrastructure strength, the system will help manage water resources better. It will also provide real-time updates and predictions to prepare communities and make their water and sanitation systems more resilient.
+                  </p>
+                </div>
+
+                <!-- Objectives -->
+                <div class="mb-4 p-4 rounded-4" style="background: #181818;">
+                  <h4 class="text-white mb-3"><i class="bi bi-bullseye me-2 text-danger"></i>Project Objectives</h4>
+                  <ul class="list-unstyled text-white-50">
+                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Develop an ML System:</strong> Create predictive models using machine learning to forecast severe weather events.</li>
+                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Analyze Impact:</strong> Evaluate and quantify severe weather effects on local water availability and sanitation infrastructure.</li>
+                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Real-Time Community Alerts:</strong> Deliver actionable updates and early warnings to communities to reduce disease risk and flooding.</li>
+                  </ul>
+                </div>
+
+                <!-- Visualizations & Prototype Preview -->
+                <div class="mb-4 p-4 rounded-4" style="background: #181818; border: 1px solid #333;">
+                  <h4 class="text-white mb-3"><i class="bi bi-bar-chart-line-fill me-2 text-warning"></i>System Dashboard & Visualizations</h4>
+                  <p class="text-white-50 small mb-3">Natural Disaster Analysis & Real-Time Upcoming Prediction Analytics:</p>
+
+                  <!-- Simulated Dashboard Widgets -->
+                  <div class="row g-2 mb-3">
+                    <div class="col-6">
+                      <div class="p-3 text-center rounded-3" style="background: #222; border: 1px solid #444;">
+                        <div class="text-uppercase text-white-50 small">Upcoming Flood Warning</div>
+                        <div class="fs-4 fw-bold text-danger">HIGH RISK (87%)</div>
+                        <small class="text-white-50">Heavy Rainfall Expected</small>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="p-3 text-center rounded-3" style="background: #222; border: 1px solid #444;">
+                        <div class="text-uppercase text-white-50 small">Water Quality Index</div>
+                        <div class="fs-4 fw-bold text-warning">TURBIDITY ALERT</div>
+                        <small class="text-white-50">Filter Station Monitored</small>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Regional Analysis Table -->
+                  <div class="table-responsive">
+                    <table class="table table-dark table-striped table-hover small rounded align-middle">
+                      <thead>
+                        <tr class="table-secondary">
+                          <th>Region / District</th>
+                          <th>Weather Forecast</th>
+                          <th>Sanitation Impact</th>
+                          <th>Alert Status</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Gauteng East</td>
+                          <td>Heavy Torrential Rain</td>
+                          <td>Stormwater Overflow</td>
+                          <td><span class="badge bg-danger">Critical</span></td>
+                        </tr>
+                        <tr>
+                          <td>KwaZulu-Natal Coastal</td>
+                          <td>High Rain & Wind</td>
+                          <td>Water Supply Contamination</td>
+                          <td><span class="badge bg-warning text-dark">Warning</span></td>
+                        </tr>
+                        <tr>
+                          <td>Eastern Cape Rural</td>
+                          <td>Extended Drought</td>
+                          <td>Reservoir Depletion</td>
+                          <td><span class="badge bg-info text-dark">Monitored</span></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Right Column: Tech Stack, Group Members, Benefits, Wow Factor, Future Scope -->
+              <div class="col-lg-5">
+
+                <!-- Technology Stack -->
+                <div class="mb-4 p-4 rounded-4" style="background: #181818;">
+                  <h4 class="text-white mb-3"><i class="bi bi-stack me-2 text-info"></i>Technology Stack</h4>
+                  <ul class="list-unstyled text-white-50 small">
+                    <li class="mb-2"><i class="bi bi-cpu-fill text-warning me-2"></i><strong>IBM Data Science & ML Platform:</strong> For developing, training, and deploying machine learning models.</li>
+                    <li class="mb-2"><i class="bi bi-database-fill text-info me-2"></i><strong>Public Datasets:</strong> Historical weather reports, water quality records, and infrastructure resilience metrics.</li>
+                    <li class="mb-2"><i class="bi bi-wifi text-success me-2"></i><strong>IoT Devices:</strong> Real-time data collection, telemetry, and environmental monitoring.</li>
+                    <li class="mb-2"><i class="bi bi-graph-up-arrow text-danger me-2"></i><strong>Predictive Analytics:</strong> Algorithms forecasting severe weather conditions and impact levels.</li>
+                    <li class="mb-2"><i class="bi bi-chat-dots-fill text-primary me-2"></i><strong>Community Engagement Tools:</strong> Feedback mechanisms ensuring solution adaptability.</li>
+                  </ul>
+                </div>
+
+                <!-- Group Members and Roles -->
+                <div class="mb-4 p-4 rounded-4" style="background: #181818;">
+                  <h4 class="text-white mb-3"><i class="bi bi-people-fill me-2 text-success"></i>Group Members & Roles</h4>
+                  <div class="list-group list-group-flush bg-transparent">
+                    <div class="list-group-item bg-transparent text-white border-secondary px-0 py-2 d-flex justify-content-between align-items-center">
+                      <span><i class="bi bi-person-badge me-2 text-warning"></i>Abongile Loyiso Bakubaku</span>
+                      <span class="badge bg-secondary">Researcher</span>
+                    </div>
+                    <div class="list-group-item bg-transparent text-white border-secondary px-0 py-2 d-flex justify-content-between align-items-center">
+                      <span><i class="bi bi-person-badge me-2 text-warning"></i>Yanga Ngqolana</span>
+                      <span class="badge bg-secondary">Researcher</span>
+                    </div>
+                    <div class="list-group-item bg-transparent text-white border-secondary px-0 py-2 d-flex justify-content-between align-items-center">
+                      <span><i class="bi bi-person-badge-fill me-2 text-success"></i>Mbuso Cosby Ubisi</span>
+                      <span class="badge bg-success">Technical</span>
+                    </div>
+                    <div class="list-group-item bg-transparent text-white border-secondary px-0 py-2 d-flex justify-content-between align-items-center">
+                      <span><i class="bi bi-person-badge me-2 text-info"></i>Sange Lugalo</span>
+                      <span class="badge bg-info text-dark">Technical</span>
+                    </div>
+                    <div class="list-group-item bg-transparent text-white border-secondary px-0 py-2 d-flex justify-content-between align-items-center">
+                      <span><i class="bi bi-person-badge me-2 text-info"></i>Indiphe Yonwaba Nondlazi</span>
+                      <span class="badge bg-info text-dark">Technical</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Benefits & Community Impact -->
+                <div class="mb-4 p-4 rounded-4" style="background: #181818;">
+                  <h4 class="text-white mb-3"><i class="bi bi-heart-pulse-fill me-2 text-danger"></i>Benefits & Community Impact</h4>
+                  <ul class="text-white-50 small mb-0 ps-3">
+                    <li class="mb-1"><strong>Improved Water Management:</strong> Better allocation during climate variability.</li>
+                    <li class="mb-1"><strong>Real-Time Updates:</strong> Actionable notifications to communities before severe storms.</li>
+                    <li class="mb-1"><strong>Enhanced Resilience:</strong> Stronger infrastructure preparedness against floods & droughts.</li>
+                    <li class="mb-1"><strong>Public Health:</strong> Reduced exposure to water-borne diseases during extreme events.</li>
+                  </ul>
+                </div>
+
+                <!-- Wow Factor -->
+                <div class="mb-4 p-4 rounded-4" style="background: linear-gradient(145deg, #1d1810 0%, #2e2010 100%); border: 1px solid #DDA15E;">
+                  <h4 class="text-warning mb-2"><i class="bi bi-star-fill me-2"></i>Wow Factor</h4>
+                  <p class="text-white-50 small m-0 leading-relaxed">
+                    What makes this project stand out is how it tackles water and sanitation issues from all angles using advanced technology. By blending machine learning, real-time data, and community involvement, the solution not only predicts and reduces the effects of extreme weather but also gives communities useful information they can act on. This forward-thinking approach can greatly improve public health and make infrastructure stronger and more reliable.
+                  </p>
+                </div>
+
+                <!-- Future Scope -->
+                <div class="mb-4 p-4 rounded-4" style="background: #181818;">
+                  <h4 class="text-white mb-2"><i class="bi bi-rocket-takeoff-fill me-2 text-primary"></i>Future Scope</h4>
+                  <p class="text-white-50 small m-0 leading-relaxed">
+                    The system is designed to keep improving and can grow as needed. In the future, we could add smart devices to collect real-time data, expand the model to other areas facing similar problems, and include ways for the community to share feedback, ensuring it meets their needs. Working with government and non-government groups can also help spread the solution and support policies that make it more effective.
+                  </p>
+                </div>
+
+                <!-- Services Offered -->
+                <div class="p-4 rounded-4" style="background: #181818;">
+                  <h4 class="text-white mb-2"><i class="bi bi-gear-wide-connected me-2 text-warning"></i>Services Offered</h4>
+                  <ul class="text-white-50 small mb-0 ps-3">
+                    <li>Real-Time Weather Risk Forecasts</li>
+                    <li>Water & Sanitation Infrastructure Analytics</li>
+                    <li>Community Early Warning & Feedback Network</li>
+                    <li>Disaster Preparedness & Quality Monitoring</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer border-secondary border-top p-3" style="background-color: #1a1a1a;">
+            <button type="button" class="btn btn-secondary px-4 rounded-pill" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>
